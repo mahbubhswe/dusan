@@ -51,17 +51,39 @@ function Navbar() {
           </Toolbar>
         </Container>
       </AppBar>
-      <Drawer open={open} onClose={() => setOpen(false)}>
-        <Stack direction={"column"}>
-          {navItems.map((page) => (
-            <Button
-              key={page.title}
-              sx={{ color: "white" }}
-              onClick={() => router.push(page.pathname)}
-            >
-              {page.title}
-            </Button>
-          ))}
+      <Drawer
+        open={open}
+        elevation={1}
+        sx={{ width: "500px" }}
+        onClose={() => setOpen(false)}
+      >
+        <Stack
+          sx={{ height: "100vh", p: "30px" }}
+          direction="column"
+          justifyContent={"space-between"}
+        >
+          <Stack
+            direction="column"
+            justifyContent="flex-start"
+            alignItems="flex-start"
+          >
+            <h2>Menu</h2>
+            {navItems.map((page) => (
+              <Button
+                key={page.title}
+                sx={{
+                  color: pathname == page.pathname ? "black" : "black",
+                  backgroundColor: pathname == page.pathname ? "#EEF3EF" : null,
+                }}
+                onClick={() => {
+                  setOpen(false), router.push(page.pathname);
+                }}
+              >
+                {page.title}
+              </Button>
+            ))}
+          </Stack>
+          <Button variant="outlined">Login</Button>
         </Stack>
       </Drawer>
     </React.Fragment>
