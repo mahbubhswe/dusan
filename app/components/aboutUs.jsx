@@ -8,7 +8,7 @@ export default function AboutUs() {
   return (
     <Box
       sx={{
-        height: { xs: "800px", sm: "450px", md: "450px" },
+        height: { xs: "1000px", sm: "450px", md: "450px" },
         marginTop: "100px",
         padding: "10px",
         background: "#EEF3EF",
@@ -16,7 +16,10 @@ export default function AboutUs() {
     >
       <h1 style={{ color: "#14142B", textAlign: "center" }}>About Us</h1>
 
-      <Stack direction={{ xs: "column", sm: "row", md: "row" }} justifyContent={"space-between"}>
+      <Stack
+        direction={{ xs: "column", sm: "row", md: "row" }}
+        justifyContent={"space-between"}
+      >
         <Box
           sx={{
             width: { xs: "100%", sm: "100%", md: "50%" },

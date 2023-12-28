@@ -7,7 +7,7 @@ export default function OurMission() {
   return (
     <Box
       sx={{
-        height: { xs: "800px", sm: "450px", md: "450px" },
+        height: { xs: "1000px", sm: "450px", md: "450px" },
         marginTop: "100px",
         padding: "10px",
       }}
