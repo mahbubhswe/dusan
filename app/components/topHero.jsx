@@ -12,10 +12,10 @@ export default function TopHero() {
         <Typography
           sx={{ color: "black", fontWeight: "bold", fontSize: "21px" }}
         >
-          Dhaka University Student
+          ঢাকা ইউনিভার্সিটি স্টুডেন্টস এসোসিয়েশন আব নান্দাইল
         </Typography>
         <Typography sx={{ color: "grey" }}>
-          In publishing and graphic design
+          সু-শিক্ষায় শিক্ষিত হবো, আলোকিত নান্দাইল গড়বো
         </Typography>
       </Box>
     </Stack>

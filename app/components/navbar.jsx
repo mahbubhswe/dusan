@@ -8,7 +8,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import Drawer from "@mui/material/Drawer";
-import navItems from "../../utils/navItems";
+import navItems from "../utils/navItems";
 import { useRouter, usePathname } from "next/navigation";
 import TopHero from "./topHero";
 
@@ -39,8 +39,6 @@ function Navbar() {
                   key={page.title}
                   sx={{
                     color: pathname == page.pathname ? "black" : "white",
-                    backgroundColor:
-                      pathname == page.pathname ? "#EEF3EF" : null,
                   }}
                   onClick={() => router.push(page.pathname)}
                 >
@@ -73,7 +71,6 @@ function Navbar() {
                 key={page.title}
                 sx={{
                   color: pathname == page.pathname ? "black" : "black",
-                  backgroundColor: pathname == page.pathname ? "#EEF3EF" : null,
                 }}
                 onClick={() => {
                   setOpen(false), router.push(page.pathname);

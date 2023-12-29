@@ -3,3 +3,10 @@ body {
   padding: 0px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+.textStyle {
+  font-size: 30px;
+  background: linear-gradient(90deg, #ff0000 5%, #00b053 15%, #1baada 30%);
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 12px transparent;
+  color: #000;
+}
