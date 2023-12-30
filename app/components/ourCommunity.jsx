@@ -12,7 +12,6 @@ export default function OurCommunity() {
     <Box
       sx={{
         height: { xs: "1000px", sm: "500px", md: "500px" },
-        marginTop: "50px",
         padding: "10px",
         display: "grid",
         placeContent: "center",
@@ -20,9 +19,9 @@ export default function OurCommunity() {
     >
       <h1
         style={{
-          color: "#ED692C",
+          color: "#CC2D3C",
           textAlign: "center",
-          textShadow: "5px 5px 25px #FF534F",
+          textShadow: "5px 5px 25px #CC2D3C",
         }}
       >
         Our Community
@@ -59,18 +58,18 @@ export default function OurCommunity() {
               style={{
                 padding: "25px",
                 borderRadius: "50%",
-                border: "3px solid #ED692C",
+                border: "3px solid #CC2D3C",
               }}
             />
             <h2>Join Today</h2>
             <h2
               style={{
-                color: "#ED692C",
+                color: "#CC2D3C",
                 textAlign: "center",
-                textShadow: "5px 5px 25px #FF534F",
+                textShadow: "5px 5px 25px #CC2D3C",
               }}
             >
-              <CountUp end={100} />
+              <CountUp end={1000000} />
             </h2>
           </Stack>
         </Box>
@@ -94,18 +93,18 @@ export default function OurCommunity() {
               style={{
                 padding: "25px",
                 borderRadius: "50%",
-                border: "3px solid #ED692C",
+                border: "3px solid #CC2D3C",
               }}
             />
             <h2>Total Member</h2>
             <h2
               style={{
-                color: "#ED692C",
+                color: "#CC2D3C",
                 textAlign: "center",
-                textShadow: "5px 5px 25px #FF534F",
+                textShadow: "5px 5px 25px #CC2D3C",
               }}
             >
-              <CountUp end={100} />
+              <CountUp end={1000000} />
             </h2>
           </Stack>
         </Box>

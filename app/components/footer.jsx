@@ -88,7 +88,7 @@ export default function Footer() {
             <Button
               variant="contained"
               size="large"
-              sx={{ backgroundColor: "#D0392C" }}
+              sx={{ backgroundColor: "#CC2D3C" }}
             >
               Download Now
             </Button>

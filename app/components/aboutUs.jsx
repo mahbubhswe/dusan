@@ -9,7 +9,6 @@ export default function AboutUs() {
     <Box
       sx={{
         height: { xs: "1000px", sm: "500px", md: "500px" },
-        marginTop: "50px",
         padding: "10px",
         display: "grid",
         placeContent: "center",
@@ -17,9 +16,9 @@ export default function AboutUs() {
     >
       <h1
         style={{
-          color: "#ED692C",
+          color: "#CC2D3C",
           textAlign: "center",
-          textShadow: "5px 5px 25px #FF534F",
+          textShadow: "5px 5px 25px #CC2D3C",
         }}
       >
         About Us
