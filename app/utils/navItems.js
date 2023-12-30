@@ -13,7 +13,7 @@ const navItems = [
   },
   {
     title: "মেম্বার আবেদন",
-    pathname: "/apply-embership",
+    pathname: "/apply-mebership",
   },
 
   {

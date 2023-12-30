@@ -111,34 +111,12 @@ export default function Page() {
               fontWeight: "bold",
               fontSize: "25px",
               py: "10px",
-              textShadow: "2px 2px 3px teal",
+              textShadow: "2px 2px 3px grey",
             }}
           >
             সদস্য একাউন্ট আবেদন ফরম
           </Typography>
-          {memberInfo.photo ? (
-            <Image
-              src={memberInfo.photo}
-              height={200}
-              width={200}
-              style={{ borderRadius: "50%" }}
-              quality={100}
-            />
-          ) : (
-            <p
-              style={{
-                height: "200px",
-                width: "200px",
-                border: "1px dashed grey",
-                borderRadius: "7px",
-                display: "grid",
-                placeContent: "center",
-                color: "grey",
-              }}
-            >
-              ফটো নির্বাচন করুন
-            </p>
-          )}
+
           <FileBase64
             onDone={(data) =>
               setMemberInfo({ ...memberInfo, photo: data.base64 })
