@@ -10,11 +10,17 @@ export default function TopHero() {
       <Image src={"/logo.jpg"} height={120} width={120} quality={100} />
       <Box sx={{ display: "grid", placeContent: "center" }}>
         <h1 className="titleFont">
-          ঢাকা ইউনিভার্সিটি স্টুডেন্টস এসোসিয়েশন আব নান্দাইল
+          ঢাকা ইউনিভার্সিটি স্টুডেন্ট এসোসিয়েশন আব নান্দাইল(নরসুন্দা)
         </h1>
-        <Typography sx={{ color: "grey" }}>
-          সু-শিক্ষায় শিক্ষিত হবো, আলোকিত নান্দাইল গড়বো
-        </Typography>
+        <div>
+          <span style={{ color: "grey" }}>
+            সু-শিক্ষায় শিক্ষিত হবো, আলোকিত নান্দাইল গড়বো
+          </span>
+          <br />
+          <span style={{ color: "grey" }}>
+            স্থাপিত - ২০১৫, কার্যালয় - ঢাকা বিশ্ববিদ্যালয়
+          </span>
+        </div>
       </Box>
     </Stack>
   );

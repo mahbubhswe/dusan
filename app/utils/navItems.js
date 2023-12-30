@@ -4,6 +4,10 @@ const navItems = [
     pathname: "/",
   },
   {
+    title: "আমাদের নান্দাইল",
+    pathname: "/our-nandail",
+  },
+  {
     title: "নিউজ ফিড",
     pathname: "/newsfeed",
   },
