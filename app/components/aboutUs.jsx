@@ -1,8 +1,10 @@
+"use client";
 import React from "react";
 import Stack from "@mui/material/Stack";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Image from "next/image";
+import { Zoom, Slide } from "react-awesome-reveal";
 
 export default function AboutUs() {
   return (
@@ -35,13 +37,15 @@ export default function AboutUs() {
             placeContent: "center",
           }}
         >
-          <Image
-            src={"/aboutus.png"}
-            height={300}
-            width={300}
-            quality={100}
-            alt="About us image"
-          />
+          <Zoom>
+            <Image
+              src={"/aboutus.png"}
+              height={300}
+              width={300}
+              quality={100}
+              alt="About us image"
+            />
+          </Zoom>
         </Box>
         <Box
           sx={{
@@ -50,18 +54,21 @@ export default function AboutUs() {
             placeContent: "center",
           }}
         >
-          <Typography p={5}>
-            In publishing and graphic design, Lorem ipsum is a placeholder text
-            commonly used to demonstrate the visual form of a document or a
-            typeface without relying on meaningful content. Lorem ipsum may be
-            used as a placeholder before final copy is available. In publishing
-            and graphic design, Lorem ipsum is a placeholder text commonly used
-            to demonstrate the visual form of a document or a typeface without
-            relying on meaningful content. Lorem ipsum may be used as a
-            placeholder before final copy is available. In publishing and
-            relying on meaningful content. Lorem ipsum may be used as a
-            placeholder before final copy is available. In publishing and
-          </Typography>
+          <Slide direction="right">
+            <Typography p={5}>
+              In publishing and graphic design, Lorem ipsum is a placeholder
+              text commonly used to demonstrate the visual form of a document or
+              a typeface without relying on meaningful content. Lorem ipsum may
+              be used as a placeholder before final copy is available. In
+              publishing and graphic design, Lorem ipsum is a placeholder text
+              commonly used to demonstrate the visual form of a document or a
+              typeface without relying on meaningful content. Lorem ipsum may be
+              used as a placeholder before final copy is available. In
+              publishing and relying on meaningful content. Lorem ipsum may be
+              used as a placeholder before final copy is available. In
+              publishing and
+            </Typography>
+          </Slide>
         </Box>
       </Stack>
     </Box>

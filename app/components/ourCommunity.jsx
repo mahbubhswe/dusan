@@ -4,8 +4,8 @@ import Stack from "@mui/material/Stack";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Image from "next/image";
-import { CountdownCircleTimer } from "react-countdown-circle-timer";
 import CountUp from "react-countup";
+import { Zoom, Slide } from "react-awesome-reveal";
 
 export default function OurCommunity() {
   return (
@@ -26,11 +26,14 @@ export default function OurCommunity() {
       >
         Our Community
       </h1>
-      <Typography style={{ width: "50%", margin: "auto" }}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-        veniam, autem blanditiis iure eius nihil numquam possimus a provident
-        omnis vitae mollitia, nisi explicabo asperiores aliquam?
-      </Typography>
+      <Zoom>
+        <Typography style={{ width: "50%", margin: "auto" }}>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+          veniam, autem blanditiis iure eius nihil numquam possimus a provident
+          omnis vitae mollitia, nisi explicabo asperiores aliquam?
+        </Typography>
+      </Zoom>
+
       <br />
       <br />
 
@@ -45,33 +48,35 @@ export default function OurCommunity() {
             placeContent: "center",
           }}
         >
-          <Stack
-            direction={"column"}
-            justifyContent={"center"}
-            alignItems={"center"}
-          >
-            <Image
-              src={"/group.png"}
-              height={100}
-              width={100}
-              quality={100}
-              style={{
-                padding: "25px",
-                borderRadius: "50%",
-                border: "3px solid #CC2D3C",
-              }}
-            />
-            <h2>Join Today</h2>
-            <h2
-              style={{
-                color: "#CC2D3C",
-                textAlign: "center",
-                textShadow: "5px 5px 25px #CC2D3C",
-              }}
+          <Slide direction="up">
+            <Stack
+              direction={"column"}
+              justifyContent={"center"}
+              alignItems={"center"}
             >
-              <CountUp end={1000000} />
-            </h2>
-          </Stack>
+              <Image
+                src={"/group.png"}
+                height={100}
+                width={100}
+                quality={100}
+                style={{
+                  padding: "25px",
+                  borderRadius: "50%",
+                  border: "3px solid #CC2D3C",
+                }}
+              />
+              <h2>Join Today</h2>
+              <h2
+                style={{
+                  color: "#CC2D3C",
+                  textAlign: "center",
+                  textShadow: "5px 5px 25px #CC2D3C",
+                }}
+              >
+                <CountUp end={1000000} />
+              </h2>
+            </Stack>{" "}
+          </Slide>
         </Box>
         <Box
           sx={{
@@ -80,33 +85,35 @@ export default function OurCommunity() {
             placeContent: "center",
           }}
         >
-          <Stack
-            direction={"column"}
-            justifyContent={"center"}
-            alignItems={"center"}
-          >
-            <Image
-              src={"/user.png"}
-              height={100}
-              width={100}
-              quality={100}
-              style={{
-                padding: "25px",
-                borderRadius: "50%",
-                border: "3px solid #CC2D3C",
-              }}
-            />
-            <h2>Total Member</h2>
-            <h2
-              style={{
-                color: "#CC2D3C",
-                textAlign: "center",
-                textShadow: "5px 5px 25px #CC2D3C",
-              }}
+          <Slide direction="up">
+            <Stack
+              direction={"column"}
+              justifyContent={"center"}
+              alignItems={"center"}
             >
-              <CountUp end={1000000} />
-            </h2>
-          </Stack>
+              <Image
+                src={"/user.png"}
+                height={100}
+                width={100}
+                quality={100}
+                style={{
+                  padding: "25px",
+                  borderRadius: "50%",
+                  border: "3px solid #CC2D3C",
+                }}
+              />
+              <h2>Total Member</h2>
+              <h2
+                style={{
+                  color: "#CC2D3C",
+                  textAlign: "center",
+                  textShadow: "5px 5px 25px #CC2D3C",
+                }}
+              >
+                <CountUp end={1000000} />
+              </h2>
+            </Stack>{" "}
+          </Slide>
         </Box>
       </Stack>
     </Box>
