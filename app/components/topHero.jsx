@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function TopHero() {
   return (
-    <Stack direction={"row"} sx={{ height: "130px", background: "white" }}>
+    <Stack direction={"row"} sx={{ height: "130px", background: "#FFFAF9" }}>
       <Image src={"/logo.jpg"} height={120} width={120} quality={100} />
       <Box sx={{ display: "grid", placeContent: "center" }}>
         <h1 className="titleFont">

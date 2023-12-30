@@ -16,7 +16,7 @@ export default function OurMission() {
     >
       <h1
         style={{
-          color: "#14142B",
+          color: "#ED692C",
           textAlign: "center",
           textShadow: "5px 5px 25px #FF534F",
         }}

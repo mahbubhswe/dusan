@@ -9,9 +9,7 @@ export default function LatestUpdate() {
       sx={{
         marginTop: "100px",
         border: "1px solid white",
-        borderRadius: "12px",
-        padding: "25px",
-        margin: "25px",
+        borderRadius: "25px",
         boxShadow: "0 -4px 17px rgba(78,75,102,.15)",
         padding: { xs: "3%", sm: "5%", md: "7%" },
         margin: { xs: "3%", sm: "5%", md: "7%" },

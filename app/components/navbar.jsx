@@ -18,7 +18,7 @@ function Navbar() {
   const pathname = usePathname();
   return (
     <React.Fragment>
-      <AppBar position="static" sx={{ bgcolor: "#FF534F" }} elevation={2}>
+      <AppBar position="static" sx={{ bgcolor: "#CC2D3C" }} elevation={2}>
         <TopHero />
         <Container maxWidth="xl">
           <Toolbar disableGutters sx={{ p: "5px" }}>

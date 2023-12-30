@@ -11,14 +11,13 @@ export default function AboutUs() {
         height: { xs: "1000px", sm: "500px", md: "500px" },
         marginTop: "50px",
         padding: "10px",
-        background: "#EEF3EF",
         display: "grid",
         placeContent: "center",
       }}
     >
       <h1
         style={{
-          color: "#14142B",
+          color: "#ED692C",
           textAlign: "center",
           textShadow: "5px 5px 25px #FF534F",
         }}

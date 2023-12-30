@@ -96,7 +96,8 @@ export default function Footer() {
         </Box>
       </Stack>
       <p style={{ padding: "20px", background: "#FFFAF9" }}>
-        © {today.getFullYear()} Dhaka University Student All rights reserved
+        © {today.getFullYear()} Dhaka University Student Association of Nandail
+        All rights reserved
       </p>
     </Box>
   );
