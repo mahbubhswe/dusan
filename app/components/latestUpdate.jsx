@@ -32,7 +32,6 @@ export default function LatestUpdate() {
         <ListItemAvatar>
           <Avatar >
             <Image src={"/announcement.png"} height={30} width={30} quality={100}/>
-
           </Avatar>
         </ListItemAvatar>
         <ListItemText
