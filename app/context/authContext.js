@@ -8,8 +8,8 @@ import {
 } from "firebase/auth";
 import { setDoc, doc, collection } from "firebase/firestore";
 
-import { auth } from "../firebase";
-import { db } from "./../firebase";
+import { auth } from "../utils/firebase";
+import { db } from "../utils/firebase";
 
 const AuthContext = createContext();
 

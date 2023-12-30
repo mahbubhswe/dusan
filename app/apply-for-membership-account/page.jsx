@@ -1,18 +1,17 @@
 "use client";
+import React, { useState } from "react";
 import Backdrop from "@mui/material/Backdrop";
 import CircularProgress from "@mui/material/CircularProgress";
-import React from "react";
 import Stack from "@mui/material/Stack";
 import Container from "@mui/material/Container";
 import TextField from "@mui/material/TextField";
 import Autocomplete from "@mui/material/Autocomplete";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import { useState } from "react";
 import FileBase64 from "react-file-base64";
 import Swal from "sweetalert2";
-import { db } from "../utils/firebase";
 import { collection, addDoc, Timestamp } from "firebase/firestore";
+// import { db } from "@/app/utils/firebase";
 import Image from "next/image";
 
 export default function Page() {
@@ -43,37 +42,37 @@ export default function Page() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    Swal.fire({
-      title: "Are you sure?",
-      text: "You want to submit a request for membership account",
-      icon: "question",
-      showCancelButton: true,
-      confirmButtonColor: "#3085d6",
-      cancelButtonColor: "#d33",
-      confirmButtonText: "Yes",
-      reverseButtons: true,
-    }).then(async (result) => {
-      if (result.isConfirmed) {
-        try {
-          setOpen(true);
-          await addDoc(collection(db, "members"), {
-            ...memberInfo,
-          });
-          setOpen(false);
-          Swal.fire(
-            "Success",
-            "You have submitted a request successfully!",
-            "success"
-          ).then((result) => {
-            if (result.isConfirmed) {
-              e.target.reset();
-            }
-          });
-        } catch (error) {
-          console.log(error.message);
-        }
-      }
-    });
+    // Swal.fire({
+    //   title: "Are you sure?",
+    //   text: "You want to submit a request for membership account",
+    //   icon: "question",
+    //   showCancelButton: true,
+    //   confirmButtonColor: "#3085d6",
+    //   cancelButtonColor: "#d33",
+    //   confirmButtonText: "Yes",
+    //   reverseButtons: true,
+    // }).then(async (result) => {
+    //   if (result.isConfirmed) {
+    //     try {
+    //       setOpen(true);
+    //       await addDoc(collection(db, "members"), {
+    //         ...memberInfo,
+    //       });
+    //       setOpen(false);
+    //       Swal.fire(
+    //         "Success",
+    //         "You have submitted a request successfully!",
+    //         "success"
+    //       ).then((result) => {
+    //         if (result.isConfirmed) {
+    //           e.target.reset();
+    //         }
+    //       });
+    //     } catch (error) {
+    //       console.log(error.message);
+    //     }
+    //   }
+    // });
   };
   const bloodGroupList = ["A+", "A-", "B+", "B-", "AB+", "AB-", "O-"];
 
@@ -116,7 +115,29 @@ export default function Page() {
           >
             সদস্য একাউন্ট আবেদন ফরম
           </Typography>
-
+          {memberInfo.photo ? (
+            <Image
+              src={memberInfo.photo}
+              height={200}
+              width={200}
+              style={{ borderRadius: "50%" }}
+              quality={100}
+            />
+          ) : (
+            <p
+              style={{
+                height: "200px",
+                width: "200px",
+                border: "1px dashed grey",
+                borderRadius: "7px",
+                display: "grid",
+                placeContent: "center",
+                color: "grey",
+              }}
+            >
+              ফটো নির্বাচন করুন
+            </p>
+          )}
           <FileBase64
             onDone={(data) =>
               setMemberInfo({ ...memberInfo, photo: data.base64 })
