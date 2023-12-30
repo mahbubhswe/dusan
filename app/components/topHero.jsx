@@ -9,11 +9,9 @@ export default function TopHero() {
     <Stack direction={"row"} sx={{ height: "130px", background: "white" }}>
       <Image src={"/logo.jpg"} height={120} width={120} quality={100} />
       <Box sx={{ display: "grid", placeContent: "center" }}>
-        <Typography
-          sx={{ color: "black", fontWeight: "bold", fontSize: "21px" }}
-        >
+        <h1 className="titleFont">
           ঢাকা ইউনিভার্সিটি স্টুডেন্টস এসোসিয়েশন আব নান্দাইল
-        </Typography>
+        </h1>
         <Typography sx={{ color: "grey" }}>
           সু-শিক্ষায় শিক্ষিত হবো, আলোকিত নান্দাইল গড়বো
         </Typography>

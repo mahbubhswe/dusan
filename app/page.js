@@ -4,6 +4,7 @@ import AboutUs from "./components/aboutUs";
 import OurMission from "./components/ourMission";
 import Footer from "./components/footer";
 import LatestUpdate from "./components/latestUpdate";
+import OurCommunity from "./components/ourCommunity";
 
 export default function Index() {
   return (
@@ -12,6 +13,7 @@ export default function Index() {
       <LatestUpdate />
       <AboutUs />
       <OurMission />
+      <OurCommunity />
       <Footer />
     </React.Fragment>
   );

@@ -18,10 +18,10 @@ function Navbar() {
   const pathname = usePathname();
   return (
     <React.Fragment>
-      <AppBar position="static" sx={{ bgcolor: "#00A4BD" }} elevation={1}>
+      <AppBar position="static" sx={{ bgcolor: "#FF534F" }} elevation={2}>
         <TopHero />
         <Container maxWidth="xl">
-          <Toolbar disableGutters sx={{ p: "7px" }}>
+          <Toolbar disableGutters sx={{ p: "5px" }}>
             <IconButton
               size="large"
               sx={{ display: { xs: "flex", md: "none" } }}
@@ -37,6 +37,7 @@ function Navbar() {
               {navItems.map((page) => (
                 <Button
                   key={page.title}
+                  className="navFont"
                   sx={{
                     color: pathname == page.pathname ? "black" : "white",
                   }}
@@ -65,10 +66,11 @@ function Navbar() {
             justifyContent="flex-start"
             alignItems="flex-start"
           >
-            <h2>Menu</h2>
+            <h1>মেনু</h1>
             {navItems.map((page) => (
               <Button
                 key={page.title}
+                className="navFont"
                 sx={{
                   color: pathname == page.pathname ? "black" : "black",
                 }}

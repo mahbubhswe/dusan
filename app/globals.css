@@ -1,12 +1,20 @@
+@font-face {
+  src: url("https://fonts.googleapis.com/css2?family=Tiro+Bangla&display=swap");
+  font-family: "Tiro Bangla", serif;
+}
+html,
 body {
   margin: 0px;
   padding: 0px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Tiro Bangla", serif;
 }
-.textStyle {
-  font-size: 30px;
-  background: linear-gradient(90deg, #ff0000 5%, #00b053 15%, #1baada 30%);
-  -webkit-background-clip: text;
-  -webkit-text-stroke: 12px transparent;
-  color: #000;
+.navFont {
+  font-family: "Tiro Bangla", serif;
+  font-size: large;
+}
+
+.titleFont {
+  color: black;
+  font-family: "Tiro Bangla", serif;
+  font-size: larger;
 }

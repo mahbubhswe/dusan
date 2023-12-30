@@ -2,8 +2,9 @@ import React from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
+import Image from "next/image";
 
-export default function LatestUpdate() {
+export default function Page() {
   return (
     <Box
       sx={{
@@ -17,7 +18,10 @@ export default function LatestUpdate() {
         margin: { xs: "3%", sm: "5%", md: "7%" },
       }}
     >
-      <h1 style={{ color: "#14142B" }}>Latest News</h1>
+      <div style={{ textAlign: "center" }}>
+        <Image src={"/pencel.png"} width={300} height={300} quality={100} />
+      </div>
+      <h1 style={{ color: "#14142B" }}>Next Day Program </h1>
       <Divider />
       <Typography>
         In publishing and graphic design, Lorem ipsum is a placeholder text
