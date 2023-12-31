@@ -12,7 +12,7 @@ export default function TopHero() {
         background: "#FFFAF9",
       }}
     >
-      <Image src={"/logo.jpg"} height={120} width={120} quality={100} />
+      <Image src={"/logo.png"} height={120} width={120} quality={100} />
       <Box sx={{ display: "grid", placeContent: "center" }}>
         <h1
           className="titleFont"
