@@ -80,7 +80,14 @@ export default function Footer() {
           }}
         >
           <div>
-            <h1>Our Mobile App</h1>
+            <h1
+              style={{
+                color: "#009CFF",
+                textShadow: "5px 5px 25px #009CFF",
+              }}
+            >
+              Our Mobile App
+            </h1>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente
               repudiandae adipisci iusto deleniti reprehenderit
@@ -88,7 +95,7 @@ export default function Footer() {
             <Button
               variant="contained"
               size="large"
-              sx={{ backgroundColor: "#CC2D3C" }}
+              sx={{ backgroundColor: "#009CFF" }}
             >
               Download Now
             </Button>

@@ -8,7 +8,9 @@ import ListItemAvatar from "@mui/material/ListItemAvatar";
 import Avatar from "@mui/material/Avatar";
 import { Zoom } from "react-awesome-reveal";
 import Image from "next/image";
-export default function LatestUpdate() {
+import Typewriter from "typewriter-effect";
+
+export default function LastAnnouncement() {
   return (
     <Zoom>
       <Box
@@ -23,11 +25,17 @@ export default function LatestUpdate() {
       >
         <h1
           style={{
-            color: "#CC2D3C",
-            textShadow: "5px 5px 25px #CC2D3C",
+            color: "#009CFF",
+            textShadow: "5px 5px 25px #009CFF",
           }}
         >
-          Latest News
+          <Typewriter
+            options={{
+              strings: "Last Announcement",
+              autoStart: true,
+              loop: true,
+            }}
+          />
         </h1>
         <Divider />
         <ListItem>

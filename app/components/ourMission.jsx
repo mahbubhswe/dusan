@@ -18,9 +18,9 @@ export default function OurMission() {
     >
       <h1
         style={{
-          color: "#CC2D3C",
+          color: "#009CFF",
           textAlign: "center",
-          textShadow: "5px 5px 25px #CC2D3C",
+          textShadow: "5px 5px 25px #009CFF",
         }}
       >
         Our Missions
@@ -53,7 +53,7 @@ export default function OurMission() {
             placeContent: "center",
           }}
         >
-          <Slide direction="up">
+          <Slide direction="right">
             <Typography p={5}>
               In publishing and graphic design, Lorem ipsum is a placeholder
               text commonly used to demonstrate the visual form of a document or

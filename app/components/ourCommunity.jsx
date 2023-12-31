@@ -19,9 +19,9 @@ export default function OurCommunity() {
     >
       <h1
         style={{
-          color: "#CC2D3C",
+          color: "#009CFF",
           textAlign: "center",
-          textShadow: "5px 5px 25px #CC2D3C",
+          textShadow: "5px 5px 25px #009CFF",
         }}
       >
         Our Community
@@ -48,7 +48,7 @@ export default function OurCommunity() {
             placeContent: "center",
           }}
         >
-          <Slide direction="up">
+          <Slide>
             <Stack
               direction={"column"}
               justifyContent={"center"}
@@ -62,15 +62,15 @@ export default function OurCommunity() {
                 style={{
                   padding: "25px",
                   borderRadius: "50%",
-                  border: "3px solid #CC2D3C",
+                  border: "3px solid #009CFF",
                 }}
               />
               <h2>Join Today</h2>
               <h2
                 style={{
-                  color: "#CC2D3C",
+                  color: "#009CFF",
                   textAlign: "center",
-                  textShadow: "5px 5px 25px #CC2D3C",
+                  textShadow: "5px 5px 25px #009CFF",
                 }}
               >
                 <CountUp end={1000000} />
@@ -85,7 +85,7 @@ export default function OurCommunity() {
             placeContent: "center",
           }}
         >
-          <Slide direction="up">
+          <Slide direction="right">
             <Stack
               direction={"column"}
               justifyContent={"center"}
@@ -99,20 +99,20 @@ export default function OurCommunity() {
                 style={{
                   padding: "25px",
                   borderRadius: "50%",
-                  border: "3px solid #CC2D3C",
+                  border: "3px solid #009CFF",
                 }}
               />
               <h2>Total Member</h2>
               <h2
                 style={{
-                  color: "#CC2D3C",
+                  color: "#009CFF",
                   textAlign: "center",
-                  textShadow: "5px 5px 25px #CC2D3C",
+                  textShadow: "5px 5px 25px #009CFF",
                 }}
               >
                 <CountUp end={1000000} />
               </h2>
-            </Stack>{" "}
+            </Stack>
           </Slide>
         </Box>
       </Stack>

@@ -18,9 +18,9 @@ export default function AboutUs() {
     >
       <h1
         style={{
-          color: "#CC2D3C",
+          color: "#009CFF",
           textAlign: "center",
-          textShadow: "5px 5px 25px #CC2D3C",
+          textShadow: "5px 5px 25px #009CFF",
         }}
       >
         About Us
