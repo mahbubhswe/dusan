@@ -1,18 +1,21 @@
 import React from "react";
 import Stack from "@mui/material/Stack";
 import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
 import Image from "next/image";
 
 export default function TopHero() {
   return (
     <Stack
-      direction={"row"}
+      direction={{ xs: "column", sm: "row", md: "row" }}
       sx={{
-        height: { xs: "160px", sm: "130px", md: "130px" },
         background: "#FFFAF9",
+        p: "3px",
       }}
     >
-      <Image src={"/logo.png"} height={120} width={120} quality={100} />
+      <Typography align="center">
+        <Image src={"/logo.png"} height={120} width={120} quality={100} />
+      </Typography>
       <Box sx={{ display: "grid", placeContent: "center" }}>
         <h2
           className="titleFont"
@@ -24,7 +27,7 @@ export default function TopHero() {
         >
           ঢাকা ইউনিভার্সিটি স্টুডেন্ট এসোসিয়েশন আব নান্দাইল(নরসুন্দা)
         </h2>
-        <div>
+        <Typography align="center">
           <span style={{ color: "grey" }}>
             সু-শিক্ষায় শিক্ষিত হবো, আলোকিত নান্দাইল গড়বো
           </span>
@@ -34,7 +37,7 @@ export default function TopHero() {
           </span>{" "}
           <br />
           <span style={{ color: "grey" }}>dusan.narosunda@gmail.com</span>
-        </div>
+        </Typography>
       </Box>
     </Stack>
   );
