@@ -8,13 +8,13 @@ export default function TopHero() {
     <Stack
       direction={"row"}
       sx={{
-        height: { xs: "150px", sm: "130px", md: "130px" },
+        height: { xs: "160px", sm: "130px", md: "130px" },
         background: "#FFFAF9",
       }}
     >
       <Image src={"/logo.png"} height={120} width={120} quality={100} />
       <Box sx={{ display: "grid", placeContent: "center" }}>
-        <h1
+        <h2
           className="titleFont"
           style={{
             color: "#009CFF",
@@ -23,7 +23,7 @@ export default function TopHero() {
           }}
         >
           ঢাকা ইউনিভার্সিটি স্টুডেন্ট এসোসিয়েশন আব নান্দাইল(নরসুন্দা)
-        </h1>
+        </h2>
         <div>
           <span style={{ color: "grey" }}>
             সু-শিক্ষায় শিক্ষিত হবো, আলোকিত নান্দাইল গড়বো
@@ -33,9 +33,7 @@ export default function TopHero() {
             স্থাপিত - ২০১৫, কার্যালয় - ঢাকা বিশ্ববিদ্যালয়
           </span>{" "}
           <br />
-          <span style={{ color: "grey" }}>
-            E-mail:dusan.narosunda@gmail.com
-          </span>
+          <span style={{ color: "grey" }}>dusan.narosunda@gmail.com</span>
         </div>
       </Box>
     </Stack>
